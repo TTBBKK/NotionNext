@@ -19,8 +19,8 @@ export const BlogPostCardInfo = ({ post, showPreview, showPageCover, showSummary
          <Link
             href={url}
             passHref
-            className={`line-clamp-2 replace cursor-pointer text-2xl ${showPreview ? 'text-center' : ''
-                } leading-tight font-normal text-gray-600 dark:text-gray-100 hover:text-indigo-700 dark:hover:text-indigo-400`}>
+            className={`line-clamp-2 replace cursor-pointer text-2xl font-bold ${showPreview ? 'text-center' : ''
+                } leading-tight font-normal text-gray-600 dark:text-gray-100 hover:text-indigo-700 dark:hover:text-gray-400`}>
 
             <span className='menu-link '>{post.title}</span>
 
