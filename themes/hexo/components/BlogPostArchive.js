@@ -26,7 +26,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle }) => {
             const url = checkContainHttp(post.slug) ? sliceUrlFromHttp(post.slug) : `${siteConfig('SUB_PATH', '')}/${post.slug}`
             return <li
               key={post.id}
-              className="border-l-3 border-gray-600 p-1 text-xs md:text-base items-center  hover:  hover: dark:hover:border-indigo-300 dark:border-indigo-400 transform duration-500"
+              className="border-l-3 p-1 text-xs md:text-base items-center  hover:  hover: dark:hover:border-indigo-300 dark:border-indigo-400 transform duration-500"
             >
               <div id={post?.publishDay}>
                 <span className="text-gray-600">{post.date?.start_date}</span>{' '}
