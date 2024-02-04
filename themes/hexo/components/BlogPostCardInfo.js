@@ -36,7 +36,7 @@ export const BlogPostCardInfo = ({ post, showPreview, showPageCover, showSummary
                 passHref
                 className="cursor-pointer font-light text-sm menu-link hover:text-gary-600 dark:hover:text-gray-400 transform">
 
-                <i className="mr-1" />
+                <i className="mr-1 far fa-folder" />
                 {post.category}
 
             </Link>
