@@ -52,8 +52,8 @@ const Style = () => {
 
     // 自定义滚动条
     ::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
+        width: 3px;
+        height: 4px;
     }
 
     ::-webkit-scrollbar-track {
@@ -61,12 +61,12 @@ const Style = () => {
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #49b1f5;
+        background-color: #DCDCDC;
     }
 
     * {
         scrollbar-width:thin;
-        scrollbar-color: #49b1f5 transparent
+        scrollbar-color: #DCDCDC transparent
     }
     
 
