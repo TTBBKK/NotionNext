@@ -34,7 +34,7 @@ export const BlogPostCardInfo = ({ post, showPreview, showPageCover, showSummary
             <Link
                 href={`/category/${post.category}`}
                 passHref
-                className="cursor-pointer font-light text-sm menu-link hover:text-indigo-700 dark:hover:text-indigo-400 transform">
+                className="cursor-pointer font-light text-sm menu-link hover:text-gary-700 dark:hover:text-gray-400 transform">
 
                 <i className="mr-1 far fa-folder" />
                 {post.category}
@@ -46,7 +46,7 @@ export const BlogPostCardInfo = ({ post, showPreview, showPageCover, showSummary
 
           {/* 摘要 */}
           {(!showPreview || showSummary) && !post.results && (
-            <p className="line-clamp-2 replace my-3 text-gray-700  dark:text-gray-300 text-sm font-light leading-7">
+            <p className="line-clamp-2 replace my-3 text-gray-600  dark:text-gray-300 text-sm font-light leading-7">
                 {post.summary}
             </p>
           )}
@@ -77,7 +77,7 @@ export const BlogPostCardInfo = ({ post, showPreview, showPageCover, showSummary
                 passHref
                 className="font-light menu-link cursor-pointer text-sm leading-4 mr-3">
 
-                <i className="far fa-calendar-alt mr-1" />
+                <i className="invisible mr-1" />
                 {post?.publishDay || post.lastEditedDay}
 
             </Link>
