@@ -202,7 +202,7 @@ const LayoutArchive = (props) => {
   const { archivePosts } = props
   return <div className='pt-8'>
         <Card className='w-full'>
-            <div className="mb-10 pb-20 bg-white md:p-12 p-3 min-h-full dark:bg-hexo-black-gray">
+            <div className="mb-10 pb-20 bg-null md:p-12 p-3 min-h-full dark:bg-hexo-black-gray">
                 {Object.keys(archivePosts).map(archiveTitle => (
                     <BlogPostArchive
                         key={archiveTitle}
@@ -307,14 +307,14 @@ const LayoutCategoryIndex = props => {
         <div className='mt-8'>
             <Card className="w-full min-h-screen">
                 <div className="dark:text-gray-200 mb-5 mx-3">
-                    <i className="mr-4 fas fa-th" />  {locale.COMMON.CATEGORY}:
+                    <i className="mr-2 fas fa-th" />  {locale.COMMON.CATEGORY}:
                 </div>
                 <div id="category-list" className="duration-200 flex flex-wrap mx-8">
                     {categoryOptions?.map(category => {
                       return (
                             <Link key={category.name} href={`/category/${category.name}`} passHref legacyBehavior>
-                                <div className={' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-indigo-400'}>
-                                    <i className="mr-4 fas fa-folder" />  {category.name}({category.count})
+                                <div className={' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-gray-400'}>
+                                    <i className="mr-2 fas fa-folder" />  {category.name}({category.count})
                                 </div>
                             </Link>
                       )
